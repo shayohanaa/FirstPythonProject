@@ -26,7 +26,7 @@ action.perform()
 
 action.send_keys(contact)
 action.perform()
-time.sleep(5)
+time.sleep(wait)
 
 chosen_contact = driver.find_element(By.CLASS_NAME, value="matched-text")
 action.click(chosen_contact)
