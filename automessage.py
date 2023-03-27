@@ -10,10 +10,10 @@ import time
 
 
 wait = 5
-contact = "Name"
-content = "Text"
+contact = "you"
+content = "This text sent via selenium."
 
-driver = webdriver.Chrome(service=Service("<PATH_TO_CHROMEDRIVER>"))
+driver = webdriver.Chrome(service=Service("C:\\Users\\shayo\\chromedriver_win32\\chromedriver.exe"))
 driver.get("https://web.whatsapp.com/")
 print("Scan QR Code, and then press 'ENTER'")
 input()
@@ -26,12 +26,13 @@ action.perform()
 
 action.send_keys(contact)
 action.perform()
-time.sleep(wait)
+time.sleep(2)
 
-chosen_contact = driver.find_element(By.CLASS_NAME, value="matched-text")
-action.click(chosen_contact)
+chosen_contact = driver.find_element(locate_with(By.XPATH, "//div[1]/div/div/div[2]"))
+choose = driver.find_element(locate_with(By.CLASS_NAME, "rx9719la").below(chosen_contact))
+action.click(choose)
 action.perform()
-time.sleep(1)
+time.sleep(3)
 
 xpath_input = driver.find_element(By.XPATH, value="//footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p")
 action.click(xpath_input)
