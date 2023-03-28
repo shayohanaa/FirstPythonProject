@@ -13,7 +13,7 @@ wait = 5
 contact = "you"
 content = "This text sent via selenium."
 
-driver = webdriver.Chrome(service=Service("C:\\Users\\shayo\\chromedriver_win32\\chromedriver.exe"))
+driver = webdriver.Chrome(service=Service("<PATH_TO_CHROMEDRIVER"))
 driver.get("https://web.whatsapp.com/")
 print("Scan QR Code, and then press 'ENTER'")
 input()
