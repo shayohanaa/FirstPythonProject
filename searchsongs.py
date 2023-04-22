@@ -17,7 +17,7 @@ def searchSong():
         driver = webdriver.Chrome(service=Service('C://Users/shayo/chromedriver_win32/chromedriver.exe'), options=chrome_options)
         driver.get("https://www.google.com/search?q=" + songName)
         print('---- General Info ----')
-        # driver.find_element(By.XPATH, '/html/body/div[7]/div/div[7]/div[1]/div/div/div[2]/div/a[2]').click()  #
+        # driver.find_element(By.XPATH, '/html/body/div[7]/div/div[7]/div[1]/div/div/div[2]/div/a[2]').click()
         # change website to EN
         Artist = driver.find_element(By.XPATH, '//div[11]/div[4]/div[3]/div/div/div[2]/div/div/div/div[3]/div/div/div').text
         print(Artist)
