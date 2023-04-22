@@ -43,7 +43,7 @@ def searchSong():
 searchSong()
 
 while True:
-    keep = input("Would you want to search more songs? (Y/N): ")
+    keep = input("Would you like to search more songs? (Y/N): ")
     try:
         if keep == 'y':
             searchSong()
