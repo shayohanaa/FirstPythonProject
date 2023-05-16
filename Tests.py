@@ -15,7 +15,7 @@ else:
 driver.get("https://translate.google.com/")
 driver.find_element(By.CLASS_NAME, value="er8xn").send_keys("Hello")
 driver.get("https://www.youtube.com/")
-driver.find_element(By.CLASS_NAME, value="style-scope ytd-searchbox").send_keys("STARSET - Die for you")
+driver.find_element(By.CLASS_NAME, value="style-scope ytd-searchbox").send_keys("Rick Astley - Never Gonna Give You Up")
 driver.find_element(By.ID, value="search-icon-legacy").click()
 driver.get("https://www.facebook.com/")
 driver.find_element(By.CSS_SELECTOR, value="input[id=email]").clear()
