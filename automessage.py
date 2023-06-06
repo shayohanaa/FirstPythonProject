@@ -10,8 +10,8 @@ import time
 
 
 wait = 5
-contact = "you"
-content = "This text sent via selenium."
+contact = "you" # the contact you want to send a message
+content = "This text sent via selenium." # the text you want to send
 
 driver = webdriver.Chrome(service=Service("<PATH_TO_CHROMEDRIVER"))
 driver.get("https://web.whatsapp.com/")
