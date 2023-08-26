@@ -26,13 +26,11 @@ action.perform()
 
 action.send_keys(contact)
 action.perform()
-time.sleep(2)
 
 chosen_contact = driver.find_element(locate_with(By.XPATH, "//div[1]/div/div/div[2]"))
 choose = driver.find_element(locate_with(By.CLASS_NAME, "rx9719la").below(chosen_contact))
 action.click(choose)
 action.perform()
-time.sleep(3)
 
 xpath_input = driver.find_element(By.XPATH, value="//footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p")
 action.click(xpath_input)
@@ -43,5 +41,3 @@ action.perform()
 
 action.send_keys(Keys.ENTER)
 action.perform()
-
-time.sleep(wait)
