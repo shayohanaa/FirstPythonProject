@@ -9,7 +9,6 @@ from selenium.webdriver.support.relative_locator import locate_with
 import time
 
 
-wait = 5
 contact = "you" # the contact you want to send a message
 content = "This text sent via selenium." # the text you want to send
 
